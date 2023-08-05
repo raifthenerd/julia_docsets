@@ -1,0 +1,24 @@
+[submodule "ext/CUDA.jl"]
+	path = ext/CUDA.jl
+	url = https://github.com/JuliaGPU/CUDA.jl
+	branch = gh-pages
+[submodule "ext/ChainRulesCore.jl"]
+	path = ext/ChainRulesCore.jl
+	url = https://github.com/JuliaDiff/ChainRulesCore.jl
+	branch = gh-pages
+[submodule "ext/Flux.jl"]
+	path = ext/Flux.jl
+	url = https://github.com/FluxML/Flux.jl
+	branch = gh-pages
+[submodule "ext/DataFrames.jl"]
+	path = ext/DataFrames.jl
+	url = https://github.com/JuliaData/DataFrames.jl
+	branch = gh-pages
+[submodule "ext/Plots.jl"]
+	path = ext/Plots.jl
+	url = https://github.com/JuliaPlots/PlotDocs.jl
+	branch = gh-pages
+[submodule "ext/ArgParse.jl"]
+	path = ext/ArgParse.jl
+	url = https://github.com/carlobaldassi/ArgParse.jl
+	branch = gh-pages
