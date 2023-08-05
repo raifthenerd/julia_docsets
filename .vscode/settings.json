@@ -1,0 +1,31 @@
+{
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "[rust]": {
+    "editor.rulers": [
+      100
+    ],
+    "editor.indentSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rust-analyzer.check.command": "clippy",
+  "[git-commit]": {
+    "editor.rulers": [
+      50,
+      72
+    ],
+    "editor.wordWrapColumn": 72
+  },
+  "licenser.author": "Seokjin Han <raifthenerd@gmail.com>",
+  "licenser.projectName": "julia_docsets",
+  "licenser.license": "MIT"
+}
