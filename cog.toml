@@ -5,6 +5,7 @@ branch_whitelist = ["main"]
 
 pre_bump_hooks = [
   "sed -i 's/^version = \"[0-9\\.]\\+\"/version = \"{{version}}\"/' Cargo.toml",
+  "cargo check",
 ]
 post_bump_hooks = ["git push", "git push origin v{{version}}"]
 
