@@ -117,9 +117,14 @@ fn insert_search_index(conn: &Connection, index: &Index) -> Result<usize, rusqli
         } else {
             format!("{} - {}", index.title, index.page)
         };
+        let path = if index.location.ends_with('/') {
+            index.location.to_owned() + "index.html"
+        } else {
+            index.location.replace("/#", "/index.html#")
+        };
         conn.execute(
             "INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?1, ?2, ?3)",
-            (name, &index.category.to_string(), &index.location),
+            (name, &index.category.to_string(), path),
         )
     } else {
         Ok(0)
