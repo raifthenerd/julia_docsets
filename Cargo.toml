@@ -1,6 +1,6 @@
 [package]
 name = "julia_docsets"
-version = "0.0.0"
+version = "0.1.0"
 authors = ["Seokjin Han <raifthenerd@gmail.com>"]
 description = "Dash/Zeal docsets for selected Julia packages"
 readme = "README.md"
